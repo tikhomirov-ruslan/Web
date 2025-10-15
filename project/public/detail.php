@@ -1,15 +1,12 @@
 <?php
-// Load movies and reviews data
 $moviesData = file_get_contents('../data/movies.json');
 $movies = json_decode($moviesData, true);
 
 $reviewsData = file_get_contents('../data/reviews.json');
 $reviews = json_decode($reviewsData, true);
 
-// Get movie ID from URL
 $movieId = isset($_GET['id']) ? intval($_GET['id']) : 1;
 
-// Find the requested movie
 $movie = null;
 foreach ($movies as $m) {
     if ($m['id'] == $movieId) {
@@ -18,13 +15,11 @@ foreach ($movies as $m) {
     }
 }
 
-// If movie not found, redirect to catalog
 if (!$movie) {
     header('Location: catalog.php');
     exit;
 }
 
-// Get reviews for this movie
 $movieReviews = array_filter($reviews, function($review) use ($movieId) {
     return $review['movie_id'] == $movieId;
 });

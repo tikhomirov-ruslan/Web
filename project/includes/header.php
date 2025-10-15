@@ -10,7 +10,7 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <h1>MovieBase</h1>
+                <h1 style="margin: 0.1rem">MovieBase</h1>
             </div>
         </div>
     </header>

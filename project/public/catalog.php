@@ -1,12 +1,9 @@
 <?php
-// Load movies data
 $moviesData = file_get_contents('../data/movies.json');
 $movies = json_decode($moviesData, true);
 
-// Get unique genres for filter
 $genres = array_unique(array_column($movies, 'genre'));
 
-// Filter movies based on search and filter parameters
 $filteredMovies = $movies;
 
 if (isset($_GET['search']) && !empty($_GET['search'])) {

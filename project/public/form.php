@@ -1,24 +1,19 @@
 <?php
-// Load movies data
 $moviesData = file_get_contents('../data/movies.json');
 $movies = json_decode($moviesData, true);
 
-// Load reviews data
 $reviewsData = file_get_contents('../data/reviews.json');
 $reviews = json_decode($reviewsData, true);
 
-// Check if form was submitted
 $submissionSuccess = false;
 $errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Validate form data
     $movieId = isset($_POST['movie_id']) ? intval($_POST['movie_id']) : 0;
     $user = trim($_POST['user'] ?? '');
     $rating = isset($_POST['rating']) ? intval($_POST['rating']) : 0;
     $comment = trim($_POST['comment'] ?? '');
     
-    // Validation
     if ($movieId <= 0) {
         $errors[] = "Please select a movie.";
     }
@@ -35,9 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = "Please enter your review comment.";
     }
     
-    // If no errors, save the review
     if (empty($errors)) {
-        // Create new review
         $newReview = [
             'id' => count($reviews) + 1,
             'movie_id' => $movieId,
@@ -47,17 +40,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'date' => date('Y-m-d')
         ];
         
-        // Add to reviews array
         $reviews[] = $newReview;
         
-        // Save back to JSON file
         file_put_contents('../data/reviews.json', json_encode($reviews, JSON_PRETTY_PRINT));
         
         $submissionSuccess = true;
     }
 }
 
-// Get movie ID from URL if provided
 $selectedMovieId = isset($_GET['movie_id']) ? intval($_GET['movie_id']) : 0;
 ?>
 
