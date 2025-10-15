@@ -13,6 +13,7 @@ Interactive Movie Information & Review Website
     📖 Movie Details Page: Displays extended information such as release date, genre, description and reviews from users.
     💬 Reviews Section: Users can leave feedback and rate movies.
     📦 JSON Data Handling: All movie information and reviews are read from and written to JSON files using PHP.
+    🔳 Admin: Admin panel can manage movies(create,delete), reviews(delete)
 
 # 🏗️ Project Structure:
     project
