@@ -45,4 +45,4 @@ Interactive Movie Information & Review Website
 # 💬 Review Submission
 # 🔳 Admin Panel
 # 🧾 Summary
-    MovieBase demonstrates how a small development team can create a full-featured interactive website using basic web technologies. The project includes front-end design, back-end logic, and data management,         providing a foundation for future improvements such as user authentication and API integration.
+MovieBase demonstrates how a small development team can create a full-featured interactive website using basic web technologies. The project includes front-end design, back-end logic, and data management,      providing a foundation for future improvements such as user authentication and API integration.
