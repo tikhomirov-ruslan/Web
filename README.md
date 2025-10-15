@@ -1,20 +1,20 @@
-#🎬 MovieBase 
+# 🎬 MovieBase 
 Interactive Movie Information & Review Website
-#📘 Project Topic and Team Members
-Project Title: MovieBase
-Topic: A dynamic website for browsing movies, viewing detailed information, and posting user reviews.
+# 📘 Project Topic and Team Members
+    Project Title: MovieBase
+    Topic: A dynamic website for browsing movies, viewing detailed information, and posting user reviews.
 
-Team Members:
-💻 Shakhizada Zhansulu – front,back dev
-💻 Tikhomirov Ruslan – front,back dev
+# Team Members:
+    💻 Shakhizada Zhansulu – front,back dev
+    💻 Tikhomirov Ruslan – front,back dev
 
-🧩Main features:
+# 🧩Main features:
     🔍 Movie Catalog: Users can browse through available movies with posters, titles, and short summaries.
     📖 Movie Details Page: Displays extended information such as release date, genre, description and reviews from users.
     💬 Reviews Section: Users can leave feedback and rate movies.
     📦 JSON Data Handling: All movie information and reviews are read from and written to JSON files using PHP.
 
-🏗️ Project Structure:
+# 🏗️ Project Structure:
     ```bash
     moviebase/
     │
@@ -35,8 +35,8 @@ Team Members:
     └── README.md               # Project report
     ```
 
-🏠 Home Page
-🎥 Movie List Page
-🎥 Movie Details Page
-💬 Review Submission
-🔳 Admin Panel
+# 🏠 Home Page
+# 🎥 Movie List Page
+# 🎥 Movie Details Page
+# 💬 Review Submission
+# 🔳 Admin Panel
