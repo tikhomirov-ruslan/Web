@@ -54,5 +54,35 @@ Interactive Movie Information & Review Website
 # 🔳 Admin Panel
 <img width="1893" height="975" alt="image" src="https://github.com/user-attachments/assets/45c9d443-16f0-4989-be10-e1dfb64b3300" />
 
-# 🧾 Summary
-MovieBase demonstrates how a small development team can create a full-featured interactive website using basic web technologies. The project includes front-end design, back-end logic, and data management,      providing a foundation for future improvements such as user authentication and API integration.
+# 🧾 Short desc about JSON data
+All movie information is stored in a JSON file (movies.json).
+Each movie has fields such as id, title, genre, year, description, director, cast, duration, rating, and image.
+
+    {
+            "id": 1,
+            "title": "Inception",
+            "genre": "Sci-Fi",
+            "year": 2010,
+            "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+            "director": "Christopher Nolan",
+            "cast": [
+                "Leonardo DiCaprio",
+                "Joseph Gordon-Levitt",
+                "Ellen Page"
+            ],
+            "duration": "148 min",
+            "rating": 8.8,
+            "image": "inception.jpg"
+        },    
+
+All review information is stored in a JSON file (reviews.json)
+This file stores all movie details, including: id, title, genre, year, description, director, cast, duration, rating, and image.
+
+     {
+        "id": 1,
+        "movie_id": 1,
+        "user": "Alice",
+        "rating": 5,
+        "comment": "Mind-blowing concept and execution! Nolan at his best.",
+        "date": "2023-10-15"
+    },
