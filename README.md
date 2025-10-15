@@ -15,25 +15,29 @@ Interactive Movie Information & Review Website
     📦 JSON Data Handling: All movie information and reviews are read from and written to JSON files using PHP.
 
 # 🏗️ Project Structure:
-    ```bash
-    moviebase/
-    │
-    ├── index.html              # Main page (movie list)
-    ├── movie.php               # Movie details page
-    ├── review.php              # Handles review submission
-    │
-    ├── data/
-    │   ├── movies.json         # Contains all movie info
-    │   └── reviews.json        # Stores user reviews
-    │
-    ├── css/
-    │   └── style.css           # Website styling
-    │
-    ├── img/
-    │   └── ... (movie posters, icons)
-    │
-    └── README.md               # Project report
-    ```
+    project
+    ├── assets
+    │   ├── css
+    │   │   └── style.css
+    │   ├── images
+    │   │   ├── dark_knight.jpg
+    │   │   ├── inception.jpg
+    │   │   ├── pulp_fiction.jpg
+    │   │   └── shawshank.jpg
+    ├── data
+    │   ├── movies.json
+    │   └── reviews.json
+    ├── includes
+    │   ├── footer.php
+    │   ├── header.php
+    │   └── navigation.php
+    ├── public
+    │   ├── admin.php
+    │   ├── catalog.php
+    │   ├── detail.php
+    │   ├── form.php
+    │   └── index.php
+    └── README.md
 
 # 🏠 Home Page
 # 🎥 Movie List Page
