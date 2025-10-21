@@ -5,8 +5,8 @@ Interactive Movie Information & Review Website
     Topic: A dynamic website for browsing movies, viewing detailed information, and posting user reviews.
 
 # Team Members:
-    💻 Shakhizada Zhansulu – front,back dev
-    💻 Tikhomirov Ruslan – front,back dev
+    💻 Shakhizada Zhansulu – front dev
+    💻 Tikhomirov Ruslan – back dev
 
 # 🧩Main features:
     🔍 Movie Catalog: Users can browse through available movies with posters, titles, and short summaries.
